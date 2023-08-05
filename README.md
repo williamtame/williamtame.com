@@ -1,3 +1,3 @@
 # williamtame.com
-Building a website to showcase my Illustration and Art.
+Building a website to showcase my Illustrations and Art.
 Thank you for viewing!
