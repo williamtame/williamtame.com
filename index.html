@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>William Tame</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>William Tame</title>
 </head>
 
-<body style="background-color:rgb(25, 123, 202)">
+<body>
+  <div class="header">
+    <h1>William Tame Art and Illustration</h1>
+    <p>WELCOME</p>
+  </div>
 </body>
 
 <body>
-<div class="header">
-  <h1>William Tame Art and Illustration</h1>
-  <p>WELCOME</p>
-</div>
-</body>
-
 <div class="topnav">
   <a href="#">Castles</a>
   <a href="#">Animals</a>
@@ -24,24 +21,24 @@
   <a href="#">Editorial</a>
   <a href="#">Q&A</a>
 </div>
-
-<p style="color: #000000; font-weight: bolder; text-align: center; font-size: larger;">
-  <strong>This website is under construction!</strong>
-</p>
-
-<div class="construction gif">
-  <img src="page under construction 2.gif">
-</div>
+</body>
 
 <body>
-  <div class="image-grid">
-    <img src="castle sample 1.jpg">
-    <img src="dog sketch sample 1.jpg">
-    <img src="castle sample 1.jpg">
-    <img src="dog sketch sample 1.jpg">
-    <img src="castle sample 1.jpg">
-    <img src="dog sketch sample 1.jpg">
+<div class="site-images">
+  <img src="image 1.png">
+  <img src="image 1.png">
+  <img src="image 1.png">
+  <img src="image 1.png">
+  <img src="image 1.png">
+  <img src="image 1.png">
+</div>
+
+
+<body style="background-color:rgb(25, 123, 202)">
 </body>
+
+</body>
+</html>
 
 <style>
 
@@ -52,6 +49,25 @@
     font-weight: bold;
   }
 
+  .site-images {
+    width: 70%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 60px;
+  }
+  
+  .site-images img{
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .site-images img:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    box-shadow: 0 32px 75px rgba(red, green, blue, alpha);
+  }
+  
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -70,43 +86,6 @@
     background-color: #ddd;
     color: black;
   }
-  
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-  }
-  
-.construction gif {
-align-content: center;
-height: 40px;
-width: auto;
-}
-
-  .body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .new-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .img {
-      border-radius: 8px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 28%;
-      margin-bottom: 10px;
-  }
-
-  .unlock {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  }
 
   </style>
-
-</html>
+  
