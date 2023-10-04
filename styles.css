@@ -36,6 +36,10 @@
     cursor: pointer;
   }
   
+  .site-images figcaption {
+    text-align: center;
+  }
+
   .site-images img:hover{
     transform: scale(1.2);
     border-radius: 10px;
