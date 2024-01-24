@@ -1,110 +1,250 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-.header {
-    background-color: #f1f1f1;
-    padding: 15px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: large;
-  }
-
-  .construction{
-  text-align: center;
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.construction img{
-  text-align: center;
-  height: 100px;
-  width: auto;
-}
-
-  .site-images {
-    width: 70%;
-    margin: 50px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 60px;
-  }
-  
-  .site-images img{
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .site-images figcaption {
-    text-align: center;
-  }
-
-  .site-images img:hover{
-    transform: scale(1.2);
-    border-radius: 10px;
-    box-shadow: 0 32px 75px rgba(red, green, blue, alpha);
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px 16px;
-    text-decoration: none;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  /* styles.css */
-
-.liveart-button {
-  display: inline-block;
-  padding: 14px 30px;
-  background-color: #b50600;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.eal-button {
-  display: inline-block;
-  padding: 14px 30px;
-  background-color: #055e27;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.page-heading {
+  margin-top: 6px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Change to eight columns */
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-item {
+  grid-column: span 2;
+}
+
+.image-item img {
+  width: 100%; /* Set the image width to 100% of its container */
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px;
+}
+
+.williamtamelogo {
+  grid-column: 1 / span 3;
+  text-align: center;
+  width: 20px;
+  height: auto;
+}
+
+.text-merge {
+  grid-column: 5 / span 4; /* Make the text grid item span columns 5 to 8 */
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  color: #125174;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+.navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
 }
 
-.linkedin-button {
-  display: inline-block;
-  padding: 14px 30px;
-  background-color: #0077B5; /* LinkedIn blue color */
+.navbar a {
   color: white;
-  font-size: 14px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.linkedin-button:hover {
-  background-color: #005F8E; /* Darker shade for hover effect */
+.navbar a:hover {
+  background-color: #555;
 }
 
+/* Add this CSS for the second grid-container with eight columns */
+.second-grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+/* Apply styles to the grid items within the second grid-container */
+.second-grid-container .grid-item {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.image-cover img {
+  width: 100%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.image-cover {
+  grid-column: span 3; /* Make the image grid item span three columns */
+  grid-row: span 1; /* Make the image grid item span two rows */
+}
+
+.text-content {
+  grid-column: 4 / span 5; /* Make the text grid item span columns 4 to 8 */
+  grid-row: span 1; /* You can adjust the number of rows as needed */
+  padding: 10px; /* Add padding for better aesthetics */
+  background-color: #ffffff; /* Example background color, customize as needed */
+  text-align:center;
+  margin: 6%;
+}
+
+.text-content h2 {
+  font-size: 34px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #125174;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  font-size: 16px; /* Example font size, customize as needed */
+  color: #333; /* Example text color, customize as needed */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Add additional styles as needed for the second grid items */
+
+
+.text-content2 {
+  grid-column: 1 / span 5; /* Make the text grid item span columns 4 to 8 */
+  grid-row: span 1; /* You can adjust the number of rows as needed */
+  padding: 10px; /* Add padding for better aesthetics */
+  background-color: #ffffff; /* Example background color, customize as needed */
+  text-align:center;
+  margin: 6%;
+}
+
+.text-content2 h2 {
+  font-size: 34px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #125174;
+  margin-bottom: 20px;
+}
+
+.text-content2 p {
+  font-size: 16px; /* Example font size, customize as needed */
+  color: #333; /* Example text color, customize as needed */
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+
+
+.second-grid-container .grid-item.merged-image {
+  grid-column: span 3; /* Make the merged item span three columns */
+  /* Additional styling if needed */
+}
+
+.second-grid-container .grid-item.merged-image img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  /* Additional styling if needed */
+}
+
+
+
+
+
+
+/* Small images in the second grid */
+.second-grid-container .small-image {
+  width: 100%;
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.second-grid-container .small-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.second-grid-container .small-image img:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+  /* Add any additional styling for the hover effect */
+}
+
+/* Image spanning grid items 33 to 40 */
+.second-grid-container .spanned-image {
+  grid-column: span 8; /* Span across 8 columns */
+}
+
+.second-grid-container .spanned-image img {
+  width: 100%;
+  height: auto;
+  /* Add any additional styling as needed */
+}
+
+
+.bottomnavbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.bottomnavbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.bottomnavbar a:hover {
+  background-color: #555;
+}
+
+/* Add this CSS for the second grid-container with eight columns */
+.third-grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+/* Apply styles to the grid items within the second grid-container */
+.third-grid-container .grid-item {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.organisation{
+  text-align: center;
+  color: black;
+}
