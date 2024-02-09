@@ -153,6 +153,7 @@ body {
 .image-coverselection {
   grid-column: 1 / span 4; /* Make the image grid item span three columns */
   grid-row: span 1; /* Make the image grid item span two rows */
+  transition: transform 0.3s ease-in-out;
 }
 
 .image-coverselection img {
@@ -278,45 +279,6 @@ body {
 }
 
 
-
-.artselection-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12 columns */
-  gap: 10px; /* Adjust the gap between images as needed */
-  padding: 20px;
-}
-
-.artstyle {
-  position: relative;
-  overflow: hidden;
-  grid-column: span 4; /* Each image takes up 4 columns */
-  margin-bottom: 20px; /* Adjust as needed for spacing between rows */
-  text-align: center; /* Center the content horizontally */
-  transition: transform 0.3s ease-in-out;
-}
-
-.artstyle img {
-  width: 40%;
-  height: auto;
-  display: block;
-  margin: 0 auto; /* Center the image within its container */
-}
-
-.artstyletitle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.artstyle:hover {
-  transform: scale(1.1); /* Scale the image to 110% on hover */
-}
-
 .bottomnavbar {
   display: flex;
   justify-content: center;
@@ -340,20 +302,6 @@ body {
   background-color: #555;
 }
 
-/* Add this CSS for the second grid-container with eight columns */
-.third-grid-container {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 20px;
-}
-
-/* Apply styles to the grid items within the second grid-container */
-.third-grid-container .grid-item {
-  background-color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  color: #ffffff;
-}
 
 .organisation{
   text-align: center;
