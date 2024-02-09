@@ -250,16 +250,18 @@ body {
 
 .artstyle {
   position: relative;
-  text-align: center;
   overflow: hidden;
   grid-column: span 4; /* Each image takes up 4 columns */
   margin-bottom: 20px; /* Adjust as needed for spacing between rows */
+  text-align: center; /* Center the content horizontally */
+  transition: transform 0.3s ease-in-out;
 }
 
 .artstyle img {
   width: 60%;
   height: auto;
   display: block;
+  margin: 0 auto; /* Center the image within its container */
 }
 
 .artstyletitle {
