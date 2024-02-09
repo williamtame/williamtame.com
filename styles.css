@@ -227,23 +227,6 @@ body {
 }
 
 
-/* Small images in the second grid */
-.second-grid-container .small-image {
-  width: 100%;
-  margin: 10px 0; /* Adjust the margin as needed */
-}
-
-.second-grid-container .small-image img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-.second-grid-container .small-image img:hover {
-  transform: scale(1.2);
-  border-radius: 10px;
-  /* Add any additional styling for the hover effect */
-}
 
 /* Image spanning grid items 66 to 73 */
 .second-grid-container .spanned-image {
@@ -256,6 +239,43 @@ body {
   /* Add any additional styling as needed */
 }
 
+
+
+.artselection-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columns */
+  gap: 10px; /* Adjust the gap between images as needed */
+  padding: 20px;
+}
+
+.artstyle {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  grid-column: span 4; /* Each image takes up 4 columns */
+  margin-bottom: 20px; /* Adjust as needed for spacing between rows */
+}
+
+.artstyle img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.artstyletitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.artstyle:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
 
 .bottomnavbar {
   display: flex;
