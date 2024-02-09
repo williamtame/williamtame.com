@@ -227,10 +227,6 @@ body {
 }
 
 
-
-
-
-
 /* Small images in the second grid */
 .second-grid-container .small-image {
   width: 100%;
@@ -251,7 +247,7 @@ body {
 
 /* Image spanning grid items 66 to 73 */
 .second-grid-container .spanned-image {
-  grid-column: span 8; /* Span across 8 columns */
+  grid-column: span 12; /* Span across 12 columns */
 }
 
 .second-grid-container .spanned-image img {
@@ -287,7 +283,7 @@ body {
 /* Add this CSS for the second grid-container with eight columns */
 .third-grid-container {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 20px;
 }
 
