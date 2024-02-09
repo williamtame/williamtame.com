@@ -14,7 +14,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .container {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -28,7 +28,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr)); /* Change to eight columns */
+  grid-template-columns: repeat(12, minmax(0, 1fr)); /* Change to eight columns */
   gap: 10px;
   background-color: #ffffff;
 }
@@ -78,7 +78,7 @@ body {
 
 
 .text-mergetitle {
-  grid-column: 1 / span 8; /* Make the text grid item span columns 5 to 8 */
+  grid-column: 1 / span 12; /* Make the text grid item span columns 5 to 8 */
   font-weight: bolder;
   text-align: center;
   color: #125174;
@@ -126,7 +126,7 @@ body {
 /* Add this CSS for the second grid-container with eight columns */
 .second-grid-container {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 10px;
 }
 
