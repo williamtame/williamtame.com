@@ -139,15 +139,39 @@ body {
 }
 
 .image-cover {
-  grid-column: 2 / span 3; /* Make the image grid item span three columns */
+  grid-column: 1 / span 4; /* Make the image grid item span three columns */
   grid-row: span 1; /* Make the image grid item span two rows */
 }
 
 .image-cover img {
-  width: 100%; /* Make the image fill the entire width of its container */
+  width: 70%; /* Make the image fill the entire width of its container */
   height: auto; /* Maintain the image's aspect ratio */
   border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
+
+
+.image-coverselection {
+  grid-column: 1 / span 4; /* Make the image grid item span three columns */
+  grid-row: span 1; /* Make the image grid item span two rows */
+}
+
+.image-coverselection img {
+  width: 70%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.middleimageselection {
+  grid-column: 5 / span 4; /* Make the image grid item span three columns */
+  grid-row: span 1; /* Make the image grid item span two rows */
+}
+
+.middleimageselection img {
+  width: 70%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
 
 .text-content {
   grid-column: 6 / span 6; /* Make the text grid item span columns 4 to 8 */
@@ -214,13 +238,27 @@ body {
 
 
 .second-grid-container .grid-item.merged-image {
-  grid-column: 9 / span 3; /* Make the merged item span three columns */
+  grid-column: 9 / span 4; /* Make the merged item span three columns */
   grid-row: span 1; /* You can adjust the number of rows as needed */
   /* Additional styling if needed */
 }
 
 .second-grid-container .grid-item.merged-image img {
-  width: 100%; /* Make the image fill its container */
+  width: 70%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  /* Additional styling if needed */
+}
+
+
+.second-grid-container .grid-item.merged-imageselection {
+  grid-column: 9 / span 4; /* Make the merged item span three columns */
+  grid-row: span 1; /* You can adjust the number of rows as needed */
+  /* Additional styling if needed */
+}
+
+.second-grid-container .grid-item.merged-imageselection img {
+  width: 70%; /* Make the image fill its container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px;
   /* Additional styling if needed */
