@@ -46,7 +46,7 @@ body {
 }
 
 .image-item1 {
-  grid-column: 3 / span 4;
+  grid-column: 4 / span 6;
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
@@ -58,7 +58,7 @@ body {
 }
 
 .image-item2 {
-  grid-column: 7 / span 2;
+  grid-column: 10 / span 3;
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
@@ -139,7 +139,7 @@ body {
 }
 
 .image-cover {
-  grid-column: span 3; /* Make the image grid item span three columns */
+  grid-column: 2 / span 3; /* Make the image grid item span three columns */
   grid-row: span 1; /* Make the image grid item span two rows */
 }
 
@@ -150,7 +150,7 @@ body {
 }
 
 .text-content {
-  grid-column: 4 / span 5; /* Make the text grid item span columns 4 to 8 */
+  grid-column: 5 / span 8; /* Make the text grid item span columns 4 to 8 */
   grid-row: span 1; /* You can adjust the number of rows as needed */
   padding: 10px; /* Add padding for better aesthetics */
   background-color: #ffffff; /* Example background color, customize as needed */
