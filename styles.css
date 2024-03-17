@@ -19,6 +19,19 @@ body {
 }
 
 
+.artlogo {
+  grid-column: 5 / span 4;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.artlogo img {
+  width: 70%; /* Set the image width to 100% of its container */
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  height: auto; /* Maintain the aspect ratio */
+}
+
 .container {
   max-width: 95%;
   margin: 0 auto;
